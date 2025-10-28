@@ -22,16 +22,7 @@ function Home() {
   return (
     <>
         <h1>Welcome to the Home Page</h1>
-      
-            {/* {list.map((item) => (
-                <div key={item.id}>
-                    <h2>{item.name}</h2>
-                    <p>Age: {item.age}</p>
-                    <p>City: {item.city}</p>
-                    <hr />
-                </div>
-            ))}
-             */}
+    
     <BlogList list={list} deleteButton={deleteButton} viewButton={viewButton} />
     </>
   )

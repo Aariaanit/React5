@@ -13,7 +13,6 @@ function About() {
     <>
         <h1>Welcome to the About Page</h1>
         <div>
-            {/* <h2>{list}</h2> */}
             {list.map((item) => (
                 <div key={item.id}>
                     <h2>{item.name}</h2>

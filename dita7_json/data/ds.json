@@ -1,0 +1,7 @@
+{
+    "list":[
+        {"id": 1, "name": "Arianit", "age": 31, "city": "Prizren"},
+        {"id": 2, "name": "Arbër", "age": 29, "city": "Prishtinë"},
+        {"id": 3, "name": "Ardit", "age": 28, "city": "Pejë"}
+    ]
+}

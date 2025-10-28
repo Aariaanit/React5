@@ -36,6 +36,7 @@ function Home() {
         <h2>{ vlera }</h2>
         <button onClick={ () => setVlera(vlera + 1) }>Shto 1</button>
         <p>{ emer }</p>
+        <button onClick={ () => setEmer("Lis") }>Ndrysho Emrin</button>
         <p>{ arr2 }</p>
         <p>{ obj2.name } - { obj2.age } - { obj2.city }</p>
     </>
