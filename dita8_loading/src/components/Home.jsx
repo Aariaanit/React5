@@ -6,18 +6,24 @@ function Home() {
 
     const [list, setList] = useState([]);
     const [error, setError] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        setTimeout(() => {
         fetch('http://localhost:3000/list')
-        .then((res) => 
-            res.json()
-        )
-        .then((data) => 
-            setList(data)
-        )
-        .catch((error) =>
-            setError('Error fetching data:', error.message)
-        );
+        
+            .then((res) => 
+                res.json()
+            )
+            .then((data) => {
+                setList(data);
+                setLoading(false);
+            })
+            .catch((error) =>{
+                setError('Error fetching data:', error.message);
+                setLoading(false);
+            });
+    }, 1000);
     }, []);
 
 
@@ -33,8 +39,9 @@ function Home() {
   return (
     <>
         <h1>Welcome to the Home Page</h1>
+        {loading && <p>Loading...</p>}
         {error && <p style={{color:"red"}}>{error}</p>}
-        <BlogList list={list} deleteButton={deleteButton} viewButton={viewButton} />
+        {list && <BlogList list={list} deleteButton={deleteButton} viewButton={viewButton} />}
     </>
   )
 }
