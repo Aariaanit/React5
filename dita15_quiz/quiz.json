@@ -1,0 +1,199 @@
+{
+  "quiz": [
+    {
+      "question": "Cili është qëllimi kryesor i React?",
+      "options": [
+        "Të zëvendësojë HTML & CSS nga e para",
+        "Të lejojë ndërtimin e ndërfaqeve përdoruesi me komponentë",
+        "Të krijojë automatizime backend",
+        "Të funksionojë vetëm në Android"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Në React një komponent është …",
+      "options": [
+        "Një variabël globale",
+        "Një pjesë e ndërfaqes që mund të ripërdoret",
+        "Një metodë SQL",
+        "Një skedar CSS"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Në JSX, si e vendosim një variable dinamike brenda template-it?",
+      "options": [
+        "{{ variable }}",
+        "{ variable }",
+        "<variable>",
+        "[% variable %]"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Cili hook përdoret për të shtuar stilin e komponentit sipas gjendjes?",
+      "options": [
+        "useRouter",
+        "useEffect",
+        "useState",
+        "useMemo"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Si mund të shfaqim një listë elementesh në React me map?",
+      "options": [
+        "return items.map(item => <div>{item}</div>)",
+        "for item in items { … }",
+        "items.foreach(item => …)",
+        "list(items)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Kur përdorim funksion si prop (Functions as Props) çfarë mund të bëjmë?",
+      "options": [
+        "T’i dërgojmë komponentit të fëmijës një funksion që ai e thërret",
+        "Të bëjmë CSS inline",
+        "Të ndryshojmë të dhënat në backend pa API",
+        "Të përdorim hook brenda klasës"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Cili është përdorimi kryesor i useEffect?",
+      "options": [
+        "Për deklarimin e variablave",
+        "Për kryerje veprimesh pas render-it (side-effects)",
+        "Për menaxhimin e CSS-it",
+        "Për të ndryshuar direkt DOM-in"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Kur duhet të vendosim dependency array bosh [] në useEffect?",
+      "options": [
+        "Kur duam të therrasim effect vetëm një herë pas mount-it",
+        "Kur duam të therrasim në çdo render",
+        "Kur komponenti nuk ka state",
+        "Kur përdorim routing"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Kur ndërtojmë një formë kontrolluar (Controlled Input) çfarë bëjmë?",
+      "options": [
+        "Lejojmë përdoruesin të shkruajë pa ruajtur vlerën",
+        "Të lidhim vlerën e input-it me state dhe onChange",
+        "Të përdorim vetëm refs pa state",
+        "Të përdorim innerHTML"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Çfarë është API-ja (Application Programming Interface)?",
+      "options": [
+        "Një gjuhë programimi",
+        "Një ndërfaqe që lejon që programe të komunikojnë mes tyre",
+        "Vetëm për bazë të dhënash",
+        "Një lloj skedari CSS"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Cila metodë HTTP përdoret për të marrë të dhëna nga serveri?",
+      "options": ["POST", "DELETE", "GET", "PUT"],
+      "answer": 2
+    },
+    {
+      "question": "Në React, si shfaqim 'Loading…' derisa të vijnë të dhënat?",
+      "options": [
+        "Të fshijmë komponentin",
+        "Të përdorim state loading = true",
+        "Të përdorim CSS animation",
+        "Të bëjmë alert"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Çfarë bën Route path=\"/\" element={<Home />} /> ?",
+      "options": [
+        "Çakton rregullin për rrugën kryesore",
+        "Fshin komponentin Home",
+        "Ndalon të gjitha rrugët e tjera",
+        "Çakton fallback për 404"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Çfarë kupton 'programmatic redirect' në React Router?",
+      "options": [
+        "Të shtosh buton që ndryshon rrugën përmes kodit",
+        "Të shfaqësh modalin",
+        "Të ndryshosh vetëm CSS",
+        "Të fshish historikun e browser-it"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Pse pastrojmë side-effects në useEffect cleanup?",
+      "options": [
+        "Për të shkruar më pak kod",
+        "Për të shmangur memory leaks",
+        "Për të bërë CSS responsive",
+        "Për të ruajtur API key në frontend"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Në projektin final (Day 19-22), çfarë pritet të bëjmë?",
+      "options": [
+        "Të ndalojmë zhvillimin",
+        "Të ndërtojmë një projekt të plotë React",
+        "Të lexojmë vetëm dokumentim",
+        "Të ruajmë projektin për vjeshtë"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Si bëjmë DELETE request në React?",
+      "options": [
+        "fetch(url, { method: 'DELETE' })",
+        "fetch(url, { method: 'GET' })",
+        "fetch(url, { method: 'PUT' })",
+        "fetch(url, { method: 'POST' })"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Pse ndërtojmë komponentë të vegjël & të ripërdorshëm?",
+      "options": [
+        "Të rrisim kompleksitetin",
+        "Të kemi kod më të mirë për mirëmbajtje",
+        "Të bëjmë kod më pak të lexueshëm",
+        "Të bëjmë app-in të rëndë"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Çfarë mësuam në ditën 7?",
+      "options": [
+        "Routing",
+        "useState",
+        "Functions as Props",
+        "JSON Server"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Kur bëjmë fetch në backend, si trajtojmë gabimet?",
+      "options": [
+        "I injorojmë",
+        "I kapim me catch ose kontrollojmë res.ok",
+        "I shfaqim vetëm në console",
+        "Bëjmë alert automatikisht"
+      ],
+      "answer": 1
+    }
+  ]
+}
